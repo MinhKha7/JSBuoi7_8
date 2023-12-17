@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- FONT ROBOTO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FONTAWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <!-- place navbar here -->
+    </header>
+    <main>
+      <!-- Bài 1 -->
+      <div class="container">
+        <div class="header myContainer mb-3">
+          <!-- Đầu vào mảng -->
+          <div class="input">
+            <p>Nhập lần lượt các số nguyên</p>
+            <input id="soNguyen" placeholder="Nhập số nguyên" type="number" />
+            <button class="btn btn-dark" id="themSo">Thêm số</button>
+          </div>
+          <!-- Đầu ra mảng -->
+          <div class="output">
+            <p id="kq-0"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 1 -->
+      <div class="container">
+        <div class="myContainer">
+          <div
+            class="title d-flex justify-content-between"
+            data-bs-toggle="collapse"
+            href="#multiCollapseExample1"
+            role="button"
+          >
+            <div>1. Tổng số dương</div>
+            <div><i class="fa-solid fa-chevron-down"></i></div>
+          </div>
+          <div class="collapse multi-collapse" id="multiCollapseExample1">
+            <button class="btn btn-dark mt-1" id="tinhTong">Tính tổng</button>
+            <div class="output">
+              <p id="kq-1"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="container">
+        <div class="myContainer">
+          <div
+            class="title d-flex justify-content-between"
+            data-bs-toggle="collapse"
+            href="#multiCollapseExample2"
+            role="button"
+          >
+            <div>2. Đếm số dương</div>
+            <div><i class="fa-solid fa-chevron-down"></i></div>
+          </div>
+          <div class="collapse multi-collapse" id="multiCollapseExample2">
+            <button class="btn btn-dark mt-1" id="demSoDuong">Đếm số</button>
+            <div class="output">
+              <p id="kq-2"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="container">
+        <div class="myContainer">
+          <div
+            class="title d-flex justify-content-between"
+            data-bs-toggle="collapse"
+            href="#multiCollapseExample3"
+            role="button"
+          >
+            <div>3. Tìm số nhỏ nhất</div>
+            <div><i class="fa-solid fa-chevron-down"></i></div>
+          </div>
+          <div class="collapse multi-collapse" id="multiCollapseExample3">
+            <button class="btn btn-dark mt-1" id="timSoNhoNhat">
+              Tìm số nhỏ nhất
+            </button>
+            <div class="output">
+              <p id="kq-3"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="container">
+        <div class="myContainer">
+          <div
+            class="title d-flex justify-content-between"
+            data-bs-toggle="collapse"
+            href="#multiCollapseExample4"
+            role="button"
+          >
+            <div>4. Tìm số dương nhỏ nhất</div>
+            <div><i class="fa-solid fa-chevron-down"></i></div>
+          </div>
+          <div class="collapse multi-collapse" id="multiCollapseExample4">
+            <button class="btn btn-dark mt-1" id="timSoDuongNhoNhat">
+              Tìm số dương nhỏ nhất
+            </button>
+            <div class="output">
+              <p id="kq-4"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="container">
+        <div class="myContainer">
+          <div
+            class="title d-flex justify-content-between"
+            data-bs-toggle="collapse"
+            href="#multiCollapseExample5"
+            role="button"
+          >
+            <div>5. Tìm số chẵn cuối cùng</div>
+            <div><i class="fa-solid fa-chevron-down"></i></div>
+          </div>
+          <div class="collapse multi-collapse" id="multiCollapseExample5">
+            <button class="btn btn-dark mt-1" id="timSoChanCuoi">
+              Tìm số chẵn
+            </button>
+            <div class="output">
+              <p id="kq-5"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="container">
+        <div class="myContainer">
+          <div
+            class="title d-flex justify-content-between"
+            data-bs-toggle="collapse"
+            href="#multiCollapseExample6"
+            role="button"
+          >
+            <div>6. Đổi chỗ</div>
+            <div><i class="fa-solid fa-chevron-down"></i></div>
+          </div>
+          <div class="collapse multi-collapse" id="multiCollapseExample6">
+            <input id="indexA" placeholder="Nhập số vị trí A" type="number" />
+            <input id="indexB" placeholder="Nhập số vị trí B" type="number" />
+            <button class="btn btn-dark" id="doiCho">Đổi chỗ</button>
+            <div class="output">
+              <p id="kq-6"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="container">
+        <div class="myContainer">
+          <div
+            class="title d-flex justify-content-between"
+            data-bs-toggle="collapse"
+            href="#multiCollapseExample7"
+            role="button"
+          >
+            <div>7. Sắp xếp tăng dần</div>
+            <div><i class="fa-solid fa-chevron-down"></i></div>
+          </div>
+          <div class="collapse multi-collapse" id="multiCollapseExample7">
+            <button class="btn btn-dark mt-1" id="sapXep">Sắp xếp</button>
+            <div class="output">
+              <p id="kq-7"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="container">
+        <div class="myContainer">
+          <div
+            class="title d-flex justify-content-between"
+            data-bs-toggle="collapse"
+            href="#multiCollapseExample8"
+            role="button"
+          >
+            <div>8. Tìm số nguyên tố đầu tiên</div>
+            <div><i class="fa-solid fa-chevron-down"></i></div>
+          </div>
+          <div class="collapse multi-collapse" id="multiCollapseExample8">
+            <button class="btn btn-dark mt-1" id="timSoNguyenTo">
+              Tìm số nguyên tố
+            </button>
+            <div class="output">
+              <p id="kq-8"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 9 -->
+      <div class="container">
+        <div class="myContainer">
+          <div
+            class="title d-flex justify-content-between"
+            data-bs-toggle="collapse"
+            href="#multiCollapseExample9"
+            role="button"
+          >
+            <div>9. Đếm số nguyên</div>
+            <div><i class="fa-solid fa-chevron-down"></i></div>
+          </div>
+          <div class="collapse multi-collapse" id="multiCollapseExample9">
+            <!-- Đầu vào mảng -->
+            <div class="input">
+              <p>Nhập lần lượt các số thực</p>
+              <input id="soThuc" placeholder="Nhập số thực" type="number" />
+              <button class="btn btn-dark" id="themSoThuc">Thêm số</button>
+            </div>
+            <!-- Đầu ra mảng -->
+            <div class="output">
+              <p id="kq-9_1"></p>
+            </div>
+            <button class="btn btn-dark mt-2" id="demSoNguyen">
+              Đếm số nguyên
+            </button>
+            <div class="output">
+              <p id="kq-9"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 10 -->
+      <div class="container">
+        <div class="myContainer">
+          <div
+            class="title d-flex justify-content-between"
+            data-bs-toggle="collapse"
+            href="#multiCollapseExample10"
+            role="button"
+          >
+            <div>10. So sánh số lượng số âm và dương</div>
+            <div><i class="fa-solid fa-chevron-down"></i></div>
+          </div>
+          <div class="collapse multi-collapse" id="multiCollapseExample10">
+            <button class="btn btn-dark mt-1" id="soSanh">So sánh</button>
+            <div class="output">
+              <p id="kq-10"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/buoi7-8.js"></script>
+  </body>
+</html>
