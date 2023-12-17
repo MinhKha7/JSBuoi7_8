@@ -79,11 +79,16 @@ document.getElementById("timSoChanCuoi").onclick = function () {
 document.getElementById("doiCho").onclick = function () {
   var a = +document.getElementById("indexA").value;
   var b = +document.getElementById("indexB").value;
+  var indexMax = mang.length - 1;
 
-  temp = mang[a];
-  mang.splice(a, 1, mang[b]);
-  mang.splice(b, 1, temp);
-  document.getElementById("kq-6").innerHTML = mang;
+  if (a < 0 || b < 0 || a > indexMax || b > indexMax) {
+    alert(`Chỉ được nhập từ 0 đến ${indexMax}`);
+  } else {
+    temp = mang[a];
+    mang.splice(a, 1, mang[b]);
+    mang.splice(b, 1, temp);
+    document.getElementById("kq-6").innerHTML = mang;
+  }
 };
 
 // 7.
