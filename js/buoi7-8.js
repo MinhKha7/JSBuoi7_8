@@ -96,7 +96,7 @@ document.getElementById("sapXep").onclick = function () {
 // 8.
 document.getElementById("timSoNguyenTo").onclick = function () {
   var dem = 0;
-  var soNguyenTo = 0;
+  var soNguyenTo = -1;
   var doDaiMang = mang.length;
 
   for (i = 0; i <= doDaiMang - 1; i++) {
